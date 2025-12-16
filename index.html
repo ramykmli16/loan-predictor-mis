@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loan Predictor MIS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>💰 Loan Predictor – Financial MIS</h1>
+  <p class="subtitle">
+    Editable dashboard to estimate EMI, interest rate & loan end date
+  </p>
+
+  <!-- INPUT SECTION -->
+  <div class="inputs">
+
+    <div class="input-card">
+      <h3>Loan Details</h3>
+
+      <label>Loan Amount (₹)</label>
+      <input type="number" id="loanAmount" value="500000" min="0">
+
+      <label>Loan Tenure (Years)</label>
+      <input type="number" id="tenure" value="5" min="1">
+
+    </div>
+
+    <div class="input-card">
+      <h3>Loan Type</h3>
+
+      <select id="loanType">
+        <option value="home">Home Loan</option>
+        <option value="education">Education Loan</option>
+        <option value="vehicle">Vehicle Loan</option>
+        <option value="personal">Personal Loan</option>
+      </select>
+    </div>
+
+    <div class="input-card">
+      <h3>Collateral Provided</h3>
+
+      <select id="collateral">
+        <option value="none">None</option>
+        <option value="gold">Gold</option>
+        <option value="property">Property</option>
+        <option value="fd">Fixed Deposit</option>
+      </select>
+    </div>
+
+  </div>
+
+  <!-- OUTPUT SECTION -->
+  <div class="kpis">
+
+    <div class="kpi">
+      <h4>Interest Rate</h4>
+      <p id="interestRate">0%</p>
+    </div>
+
+    <div class="kpi">
+      <h4>Monthly EMI</h4>
+      <p id="emi">₹0</p>
+    </div>
+
+    <div class="kpi">
+      <h4>Total Interest Payable</h4>
+      <p id="totalInterest">₹0</p>
+    </div>
+
+    <div class="kpi">
+      <h4>Loan End Date</h4>
+      <p id="endDate">--</p>
+    </div>
+
+  </div>
+
+  <!-- INSIGHT -->
+  <div class="insights" id="insightText">
+    Change loan inputs to see repayment details
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+index.html
+Displaying index.html.
